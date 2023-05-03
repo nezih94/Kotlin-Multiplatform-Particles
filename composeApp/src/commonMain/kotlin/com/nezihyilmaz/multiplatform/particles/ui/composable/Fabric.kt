@@ -15,18 +15,18 @@ import androidx.compose.ui.graphics.Color
 fun Fabric(modifier: Modifier) {
 
     Canvas(modifier = modifier) {
-        drawRect(color = Color.LightGray)
+        drawRect(color = Color.White)
         val canvasWidth = size.width
         val canvasHeight = size.height
         val lineGap = 150f
         val strokeWidth = 4f
 
         val verticalGradient = Brush.verticalGradient(
-            colors = listOf(Color.Transparent, Color.Gray, Color.Transparent)
+            colors = listOf(Color.Transparent, Color.LightGray, Color.Transparent)
         )
 
         val horizontalGradient = Brush.horizontalGradient(
-            colors = listOf(Color.Transparent, Color.Gray, Color.Transparent)
+            colors = listOf(Color.Transparent, Color.LightGray, Color.Transparent)
         )
 
         // draw vertical lines
